@@ -1,0 +1,232 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #bec8f7, #e4e8ff);
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    color: #1f1f2e;
+}
+
+/* Main container */
+.container {
+    width: 95%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(18px);
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* Header */
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    margin-top: 5px;
+    color: #5f5f7a;
+    font-size: 16px;
+}
+
+/* Chat container */
+.chat-container {
+    background: rgba(255, 255, 255, 0.35);
+    padding: 25px;
+    border-radius: 25px;
+    margin-top: 30px;
+    box-shadow: inset 0 5px 15px rgba(0,0,0,0.06);
+}
+
+/* Chat messages scroll area */
+.chat-messages {
+    max-height: 350px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Chat message bubbles */
+.message {
+    margin-bottom: 18px;
+    display: flex;
+}
+
+.bot-message .message-content {
+    background: #d5dcff;
+    color: #2b2b44;
+    padding: 15px 20px;
+    border-radius: 18px;
+    border: 1px solid #cfd6fb;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.user-message .message-content {
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 18px;
+    margin-left: auto;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* Input box area */
+.chat-input-container {
+    margin-top: 20px;
+}
+
+/* Chat form */
+.chat-form {
+    display: flex;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: inset 0 2px 10px rgba(0,0,0,0.07);
+}
+
+/* Input field */
+.query-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+}
+
+/* Send button */
+.send-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #4b5eff;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 16px;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.send-button:hover {
+    background: #3a4be0;
+}
+
+/* Example section */
+.examples {
+    margin-top: 40px;
+}
+
+.examples h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.example-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Example buttons */
+.example-btn {
+    padding: 14px 20px;
+    background: rgba(255,255,255,0.7);
+    border: none;
+    border-radius: 16px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    text-align: left;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.06);
+}
+
+.example-btn:hover {
+    background: #f0f0ff;
+    transform: translateY(-2px);
+}
+.bot-message .message-content {
+    text-align: left;              /* Ensure left-aligned text */
+    line-height: 1.55;             /* Better readability */
+    padding: 18px 22px;            /* Perfect spacing */
+    word-wrap: break-word;         /* Prevent weird line breaks */
+}
+
+.bot-message .message-content ul {
+    margin: 10px 0 5px 18px;       /* Proper bullet spacing */
+    padding: 0;
+}
+
+.bot-message .message-content li {
+    margin-bottom: 6px;
+    line-height: 1.45;
+}
+/* --- SHRINK OVERALL CONTAINER FOR SINGLE-PAGE VIEW --- */
+
+.container {
+    max-width: 700px;       /* Smaller width */
+    padding: 20px 25px;     /* Less padding */
+    margin: 0 auto;
+}
+
+/* Reduce header spacing */
+header h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Shrink chat container */
+.chat-container {
+    padding: 18px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+/* Shrink intro bot message */
+.bot-message .message-content {
+    padding: 15px 18px;
+    font-size: 14px;
+    max-width: 520px;
+}
+
+/* Shrink input field area */
+.chat-form {
+    padding: 8px;
+}
+
+.query-input {
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.send-button {
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+/* Reduce example section */
+.examples {
+    margin-top: 25px;
+}
+
+.examples h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.example-btn {
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 12px;
+}
